@@ -10,3 +10,16 @@ for (let word of Words) {
 }
 
 console.log(res); 
+
+
+//optimised using reduce method
+let sentence = "Hello there, how are you doing today?";
+let longestWord = sentence
+  .split(" ")
+  .reduce(
+    (longest, current) =>
+      longest.length >= current.length ? longest : current,
+    ""
+  );
+
+console.log(longestWord);
