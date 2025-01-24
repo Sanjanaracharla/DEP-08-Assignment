@@ -1,0 +1,12 @@
+find the longest word in a sentence.
+let sentence = "Hello there, how are you doing today?";
+let Words = sentence.split(" ");
+let res = "";  
+
+for (let word of Words) { 
+    if (res.length <= word.length) {
+        res = word;
+    }
+}
+
+console.log(res); 
