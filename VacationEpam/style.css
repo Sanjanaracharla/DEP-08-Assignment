@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html,body{
+    height: 100%;
+    width:auto;
+}
+.nav-bar {
+    background-color: #303240; 
+    display: flex;
+    align-items: center; 
+    margin: 0;
+    padding: 0 30px; 
+    color: white;
+    margin-right: 10px;
+    position: sticky;
+}
+
+.nav-bar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.nav-bar-title {
+    display: flex;
+    flex-direction: column;
+    Margin-right: 10px
+}
+
+.nav-bar-title h1 {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 5px;
+}
+
+.nav-bar-title p {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.nav-bar-items {
+    display: flex;
+    align-items: left;
+}
+
+.nav-bar-items ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar-items li {
+    margin-right: 5px; 
+    padding: 20px 10px; 
+    border: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-bar-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover, .nav-item-active:hover{
+    background-color: #1d1e26;
+}
+
+.nav-item-active {
+    border-bottom: 3px solid #009ecc;
+}
+
+
+.nav-bar-right-side {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.add-request-btn {
+    background-color: #009ecc; 
+    border: none;
+    padding: 6px 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; 
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.plus-icon {
+    margin-right: 5px;
+}
+
+.add-request-btn:hover {
+    background-color: #0086ad; 
+}
+
+.help-image img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.zerohours
+{
+    font-size: 30px;
+    color:rgb(106, 105, 105);
+}
+.user-image img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.badge {
+    background: rgb(177, 176, 176);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.action-bar {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+.action-bar ul
+{
+    display: flex;
+    list-style-type: none;
+}
+.action-bar a{
+    text-decoration: none;
+    color: #4d5456;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+.main{
+    overflow-y: auto;
+}
+.action-bar a:hover{
+    color: #009ecc;
+}
+.action-bar li{
+    padding: 5px;
+    border: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.action-bar .active
+{
+  color: #009ecc;
+}
+.action-active
+{
+  border-bottom: 2px solid #009ecc;
+}
+
+.main-content {
+    padding: 30px 20px;
+    background-color: #f2f3f7;
+    
+}
+
+
+.circle-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: bold;
+    border: 8px solid #ddd;
+    position: relative;
+    padding: 30px;
+}
+
+.circle-chart.full {
+    border-color: #09a5d4; 
+}
+
+.fifteen {
+    font-size: 30px;
+    font-weight: bold;
+    color: #424242;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.fifteen-days  {
+    font-size: 13px;
+    color: #ced0db;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vacation-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.vacation-grid h1 {
+    text-align: left; 
+    color: #474a59;
+    padding-bottom: 25px;
+    margin-left: 0; 
+    display: flex;
+    justify-content: start;
+    font-size: 25px;
+}
+.vacation-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    gap:5px;
+    overflow-x: auto;
+}
+
+.vacation-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.vacation-card-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:10px;
+}
+.vacation-card p{
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+.vacation-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.vacation-info-text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .section-header h2 {
+    margin: 0;
+  }
+  
+  .section-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #09a5d4;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .section-header h3:hover {
+    color:#09a5d4;;
+  }
+  
+  .my-requests {
+    text-align: left;
+    padding: 20px;
+    background-color: #f2f3f7;
+  }
+  
+  .my-requests img {
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 100%; 
+    height: auto;
+   
+  }
+  
+  .my-requests p {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #aba8a8;
+    text-align: center;
+    margin: 40px 0;
+    margin-bottom: 0px;
+  }
+  .vacation-grid-header
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:10px;
+  }
+  .vacation-grid-header p
+  {
+    font-size: 16px;
+    font-weight: normal;
+    color: #09a5d4;
+    padding-bottom: 25px;
+    margin-left: 0; 
+    display: flex;
+    justify-content: start;
+    cursor:pointer;
+  }
+  
+  
