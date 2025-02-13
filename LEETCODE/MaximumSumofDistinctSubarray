@@ -1,0 +1,35 @@
+Maximum Sum of Distinct Subarrays With Length K
+You are given an integer array nums and an integer k. Find the maximum subarray sum of all the subarrays of nums that meet the following conditions:
+
+The length of the subarray is k, and
+All the elements of the subarray are distinct.
+Return the maximum subarray sum of all the subarrays that meet the conditions. If no subarray meets the conditions, return 0.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+#code
+var maximumSubarraySum = function(nums, k) {
+     let s=new Set();
+     let sum=0;
+     let maxi=0;
+     let j=0;
+     for( let i=0;i<nums.length;i++)
+     {
+        while(s.has(nums[i]))
+        {
+            sum-=nums[j];
+            s.delete(nums[j]);
+            j++;
+        }
+        s.add(nums[i]);
+        sum+=nums[i];
+        if(s.size===k)
+        {
+            maxi=Math.max(maxi,sum);
+            s.delete(nums[j]);
+            sum-=nums[j];
+            j++;
+        }
+     }
+     return maxi;
+};
